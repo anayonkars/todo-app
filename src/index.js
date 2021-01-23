@@ -4,12 +4,15 @@ import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 
 function MyApp() {
+  var elements = ["bar1", "bar2", "bar3"];
   return (
-    <ul id="foo">
-      <li>bar1</li>
-      <li>bar2</li>
-      <li>bar3</li>
-    </ul>
+    <div>
+      <ul id="foo">
+        {elements.map((element) => (
+          <li>{element}</li>
+        ))}
+      </ul>
+    </div>
   );
 }
 
