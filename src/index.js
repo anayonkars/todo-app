@@ -3,7 +3,13 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 
-ReactDOM.render(<h1>Hello, World!</h1>, document.getElementById("root"));
+ReactDOM.render(
+  <div>
+    <h1>Hello, World!</h1>
+    <p>This is a paragraph</p>
+  </div>,
+  document.getElementById("root")
+);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
