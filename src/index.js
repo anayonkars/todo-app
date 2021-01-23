@@ -4,10 +4,11 @@ import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 
 ReactDOM.render(
-  <div>
-    <h1>Hello, World!</h1>
-    <p>This is a paragraph</p>
-  </div>,
+  <ul id="foo">
+    <li>bar1</li>
+    <li>bar2</li>
+    <li>bar3</li>
+  </ul>,
   document.getElementById("root")
 );
 
