@@ -26,7 +26,7 @@ function MyApp() {
 function MyInfo() {
   var vacactionSpots = ["Asia", "Europe", "America"];
   return (
-    <div>
+    <React.Fragment>
       <h1>Anayonkar Shivalkar</h1>
       <p>Software Architect & Developer</p>
       <ul>
@@ -34,7 +34,7 @@ function MyInfo() {
           <li>{vacationSpot}</li>
         ))}
       </ul>
-    </div>
+    </React.Fragment>
   );
 }
 
