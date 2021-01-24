@@ -3,15 +3,22 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 
+function onButtonClick() {
+  window.open("http://www.google.com");
+}
+
 function MyApp() {
-  var elements = ["bar1", "bar2", "bar3"];
   return (
     <div>
-      <ul id="foo">
-        {elements.map((element) => (
-          <li>{element}</li>
-        ))}
-      </ul>
+      <button onClick={onButtonClick} className="btn btn-primary btn-sm btn-m2">
+        Reset
+      </button>
+      {/* <button
+        href="http://www.google.com"
+        className="btn btn-primary btn-sm btn-m2"
+      >
+        Reset
+      </button> */}
     </div>
   );
 }
