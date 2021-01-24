@@ -23,7 +23,22 @@ function MyApp() {
   );
 }
 
-ReactDOM.render(<MyApp />, document.getElementById("root"));
+function MyInfo() {
+  var vacactionSpots = ["Asia", "Europe", "America"];
+  return (
+    <div>
+      <h1>Anayonkar Shivalkar</h1>
+      <p>Software Architect & Developer</p>
+      <ul>
+        {vacactionSpots.map((vacationSpot) => (
+          <li>{vacationSpot}</li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
+ReactDOM.render(<MyInfo />, document.getElementById("root"));
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
