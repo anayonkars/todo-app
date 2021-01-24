@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
-import MyInfo from "./MyInfo";
+import MyInfo from "./components/MyInfo";
 
 function onButtonClick() {
   window.open("http://www.google.com");
