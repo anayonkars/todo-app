@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
+import MyInfo from "./MyInfo";
 
 function onButtonClick() {
   window.open("http://www.google.com");
@@ -20,21 +21,6 @@ function MyApp() {
         Reset
       </button> */}
     </div>
-  );
-}
-
-function MyInfo() {
-  var vacactionSpots = ["Asia", "Europe", "America"];
-  return (
-    <React.Fragment>
-      <h1>Anayonkar Shivalkar</h1>
-      <p>Software Architect & Developer</p>
-      <ul>
-        {vacactionSpots.map((vacationSpot) => (
-          <li>{vacationSpot}</li>
-        ))}
-      </ul>
-    </React.Fragment>
   );
 }
 
