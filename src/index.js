@@ -11,7 +11,7 @@ function MyApp() {
   return (
     <div>
       <button onClick={onButtonClick} className="btn btn-primary btn-sm btn-m2">
-        Reset
+        Go
       </button>
       {/* <button
         href="http://www.google.com"
@@ -23,7 +23,7 @@ function MyApp() {
   );
 }
 
-ReactDOM.render(MyApp(), document.getElementById("root"));
+ReactDOM.render(<MyApp />, document.getElementById("root"));
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
