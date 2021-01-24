@@ -5,7 +5,7 @@ function MyInfo() {
   return (
     <React.Fragment>
       <h1>Anayonkar Shivalkar</h1>
-      <p>Software Architect & Developer</p>
+      <p>Software Architect and Developer & I wish to have vacations at:</p>
       <ul>
         {vacactionSpots.map((vacationSpot) => (
           <li>{vacationSpot}</li>
