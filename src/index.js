@@ -4,6 +4,26 @@ import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 import MyApp from "./components/MyApp";
 
+// function onButtonClick() {
+//   window.open("http://www.google.com");
+// }
+
+// function MyApp() {
+//   return (
+//     <div>
+//       <button onClick={onButtonClick} className="btn btn-primary btn-sm btn-m2">
+//         Go
+//       </button>
+//       {/* <button
+//         href="http://www.google.com"
+//         className="btn btn-primary btn-sm btn-m2"
+//       >
+//         Reset
+//       </button> */}
+//     </div>
+//   );
+// }
+
 ReactDOM.render(<MyApp />, document.getElementById("root"));
 
 // If you want to start measuring performance in your app, pass a function
