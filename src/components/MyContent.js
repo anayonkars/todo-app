@@ -6,6 +6,9 @@ function MyContent() {
     "Some another todo item",
     "Yet another todo item",
   ];
+  var handleChange = (event) => {
+    console.log(event);
+  };
   return (
     <div>
       <main>
@@ -15,7 +18,7 @@ function MyContent() {
             // <li>{todoItem}</li>
             <div>
               <label>
-                <input type="checkBox" />
+                <input type="checkBox" onChange={handleChange} />
                 {todoItem}
               </label>
               <br />
