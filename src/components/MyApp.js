@@ -1,9 +1,10 @@
 import React, { Component } from "react";
+import MyHeader from "./MyHeader";
 
 function MyApp() {
   return (
     <div>
-      <header>My Header</header>
+      <MyHeader />
       <main>
         <p>My Content</p>
       </main>
