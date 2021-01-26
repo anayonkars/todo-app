@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import MyContent from "./MyContent";
 import MyFooter from "./MyFooter";
 import MyHeader from "./MyHeader";
 
@@ -6,9 +7,7 @@ function MyApp() {
   return (
     <div>
       <MyHeader />
-      <main>
-        <p>My Content</p>
-      </main>
+      <MyContent />
       <MyFooter />
     </div>
   );
