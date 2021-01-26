@@ -12,7 +12,14 @@ function MyContent() {
         <p>Content from MyContent</p>
         <ul>
           {todoItems.map((todoItem) => (
-            <li>{todoItem}</li>
+            // <li>{todoItem}</li>
+            <div>
+              <label>
+                <input type="checkBox" />
+                {todoItem}
+              </label>
+              <br />
+            </div>
           ))}
         </ul>
       </main>
