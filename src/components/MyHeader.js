@@ -1,7 +1,8 @@
 import React, { Component } from "react";
+import "../style.css";
 
 function MyHeader() {
-  return <header>Header from MyHeader</header>;
+  return (<header className={"navbar"}>Header from MyHeader</header>);
 }
 
 export default MyHeader;
