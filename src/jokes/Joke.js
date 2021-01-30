@@ -7,7 +7,9 @@ function Joke(props) {
       <p style={{ display: props.question ? "block" : "none" }}>
         Question: {props.question}
       </p>
-      <p>Punchline: {props.punchline}</p>
+      <p style={{ display: props.punchline ? "block" : "none" }}>
+        Punchline: {props.punchline}
+      </p>
     </div>
   );
 }
