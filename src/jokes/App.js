@@ -10,7 +10,7 @@ function App(props) {
       <br />
       <Joke punchline={"some punchline"} />
       <br />
-      <Joke question={"some question"} punchline={"some punchline"} />
+      <Joke question={"some question"} />
       <br />
       <Joke question={"some question"} punchline={"some punchline"} />
       <br />
