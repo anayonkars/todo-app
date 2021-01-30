@@ -6,10 +6,8 @@ class TodoItem extends Component {
   render() {
     return (
       <div className="todoitem">
-        <label>
-          <input type="checkbox" />
-          {this.props.item}
-        </label>
+        <input type="checkbox" />
+        {this.props.item}
       </div>
     );
   }
