@@ -6,6 +6,10 @@ class MyGreeting extends Component {
     const date = new Date();
     const hours = date.getHours();
     let timeOfDay;
+    const styles = {
+      color: "#FF8C00",
+      backgroundColor: "#FF2D00",
+    };
     if (hours < 12) {
       timeOfDay = "morning";
     } else if (hours > 12 && hours < 17) {
@@ -15,7 +19,7 @@ class MyGreeting extends Component {
     }
     return (
       <div>
-        <h1 style={{ color: "#FF8C00", backgroundColor: "#FF2D00" }}>
+        <h1 style={styles}>
           Good {timeOfDay}, {`${firstName} ${lastName}`}
         </h1>
         <h3>It is currently about {date.getHours() % 12} o'clock </h3>
