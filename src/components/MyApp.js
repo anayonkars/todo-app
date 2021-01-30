@@ -12,10 +12,10 @@ function MyApp() {
   ];
   return (
     <div>
-      <MyHeader />
+      {/*<MyHeader />*/}
       <MyGreeting firstName="Anayonkar" lastName="Shivalkar" />
       <MyContent todoItems={todoItems} />
-      <MyFooter />
+      {/*<MyFooter />*/}
     </div>
   );
 }

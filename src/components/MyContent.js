@@ -7,7 +7,7 @@ class MyContent extends Component {
     return (
       <div className="todolist">
         <main>
-          <p>Content from MyContent</p>
+          {/*<p>Content from MyContent</p>*/}
           <ul>
             {this.props.todoItems.map((todoItem) => (
               <TodoItem item={todoItem} />
