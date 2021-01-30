@@ -8,9 +8,9 @@ function Product(props) {
       {props.price ? (
         <p>
           Price:
-          {props.price.toLocaleString("en-US", {
+          {props.price.toLocaleString("en-IN", {
             style: "currency",
-            currency: "USD",
+            currency: "INR",
           })}
         </p>
       ) : (
