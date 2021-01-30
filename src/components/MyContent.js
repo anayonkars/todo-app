@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import TodoItem from "./TodoItem";
 
 function MyContent() {
   var todoItems = [
@@ -14,7 +15,7 @@ function MyContent() {
       <main>
         <p>Content from MyContent</p>
         <ul>
-          {todoItems.map((todoItem) => (
+          {/*{todoItems.map((todoItem) => (
             // <li>{todoItem}</li>
             <div>
               <label>
@@ -23,7 +24,12 @@ function MyContent() {
               </label>
               <br />
             </div>
-          ))}
+          ))}*/}
+          <li>
+            <TodoItem />
+            <TodoItem />
+            <TodoItem />
+          </li>
         </ul>
       </main>
     </div>

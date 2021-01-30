@@ -5,8 +5,10 @@ class TodoItem extends Component {
   render() {
     return (
       <div>
-        <input type="checkbox" />
-        <p>Placeholder text here</p>
+        <label>
+          <input type="checkbox" />
+          Placeholder text here
+        </label>
       </div>
     );
   }
