@@ -1,8 +1,4 @@
-import React, { Component } from "react";
-import MyContent from "./MyContent";
-import MyFooter from "./MyFooter";
-import MyHeader from "./MyHeader";
-import MyGreeting from "./MyGreeting";
+import React from "react";
 import todoItemsData from "./todoItemsData";
 import TodoItem from "./TodoItem";
 
@@ -12,15 +8,7 @@ function MyApp() {
       <TodoItem key={todoItem.id} item={todoItem} />
     </div>
   ));
-  return (
-    <div className={"todolist"}>
-      {/*<MyHeader />*/}
-      {/*<MyGreeting firstName="Anayonkar" lastName="Shivalkar" />*/}
-      {/*<MyContent todoItems={todoItems} />*/}
-      {todoItems}
-      {/*<MyFooter />*/}
-    </div>
-  );
+  return <div className={"todolist"}>{todoItems}</div>;
 }
 
 export default MyApp;
