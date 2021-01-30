@@ -6,7 +6,12 @@ import jokesData from "./jokesData";
 function App(props) {
   const jokes = jokesData.map((joke) => (
     <div>
-      <Joke id={joke.id} question={joke.question} punchline={joke.punchline} />
+      <Joke
+        key={joke.id}
+        id={joke.id}
+        question={joke.question}
+        punchline={joke.punchline}
+      />
       <hr />
     </div>
   ));
