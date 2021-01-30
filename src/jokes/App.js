@@ -7,15 +7,13 @@ function App(props) {
   return (
     <div>
       <h1>Below are the jokes</h1>
-      <Joke question={"some question"} punchline={"some punchline"} />
-      <hr />
-      <Joke punchline={"some punchline"} />
-      <hr />
-      <Joke question={"some question"} />
-      <hr />
-      <Joke question={"some question"} punchline={"some punchline"} />
-      <hr />
-      <Joke />
+      {jokesData.map((joke) => (
+        <Joke
+          id={joke.id}
+          question={joke.question}
+          punchline={joke.punchline}
+        />
+      ))}
     </div>
   );
 }
