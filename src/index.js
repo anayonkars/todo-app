@@ -3,7 +3,6 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 import MyApp from "./todolist/MyApp";
-import App from "./products/App";
 
 // function onButtonClick() {
 //   window.open("http://www.google.com");
@@ -25,7 +24,7 @@ import App from "./products/App";
 //   );
 // }
 
-ReactDOM.render(<App />, document.getElementById("root"));
+ReactDOM.render(<MyApp />, document.getElementById("root"));
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
