@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 import MyApp from "./todolist/MyApp";
-import App from "./jokes/App";
+import App from "./products/App";
 
 // function onButtonClick() {
 //   window.open("http://www.google.com");
