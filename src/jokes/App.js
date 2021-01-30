@@ -8,11 +8,14 @@ function App(props) {
     <div>
       <h1>Below are the jokes</h1>
       {jokesData.map((joke) => (
-        <Joke
-          id={joke.id}
-          question={joke.question}
-          punchline={joke.punchline}
-        />
+        <div>
+          <Joke
+            id={joke.id}
+            question={joke.question}
+            punchline={joke.punchline}
+          />
+          <hr />
+        </div>
       ))}
     </div>
   );

@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 function Joke(props) {
   return (
     <div>
+      {props.id ? <p>Id : {props.id}</p> : <p>There is no id</p>}
       {props.question ? (
         <p>Question: {props.question}</p>
       ) : (
