@@ -7,7 +7,7 @@ class TodoItem extends Component {
       <div>
         <label>
           <input type="checkbox" />
-          Placeholder text here
+          {this.props.item}
         </label>
       </div>
     );

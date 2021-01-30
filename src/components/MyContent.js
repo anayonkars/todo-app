@@ -27,9 +27,9 @@ class MyContent extends Component {
             </div>
           ))}*/}
             <li>
-              <TodoItem />
-              <TodoItem />
-              <TodoItem />
+              <TodoItem item="Todo Item" />
+              <TodoItem item="Some another todo item" />
+              <TodoItem item="yet another todo item" />
             </li>
           </ul>
         </main>
