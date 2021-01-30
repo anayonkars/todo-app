@@ -3,18 +3,21 @@ import MyContent from "./MyContent";
 import MyFooter from "./MyFooter";
 import MyHeader from "./MyHeader";
 import MyGreeting from "./MyGreeting";
+import todoItemsData from "./todoItemsData";
+import TodoItem from "./TodoItem";
 
 function MyApp() {
-  const todoItems = [
-    "Todo Item",
-    "Some another todo item",
-    "Yet another todo item",
-  ];
-  return (
+  const todoItems = todoItemsData.map((todoItem) => (
     <div>
+      <TodoItem key={todoItem.id} item={todoItem.description} />
+    </div>
+  ));
+  return (
+    <div className={"todolist"}>
       {/*<MyHeader />*/}
-      <MyGreeting firstName="Anayonkar" lastName="Shivalkar" />
-      <MyContent todoItems={todoItems} />
+      {/*<MyGreeting firstName="Anayonkar" lastName="Shivalkar" />*/}
+      {/*<MyContent todoItems={todoItems} />*/}
+      {todoItems}
       {/*<MyFooter />*/}
     </div>
   );
