@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import Joke from "./Joke";
+import jokesData from "./jokesData";
 
 function App(props) {
   return (
