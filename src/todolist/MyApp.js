@@ -9,7 +9,7 @@ import TodoItem from "./TodoItem";
 function MyApp() {
   const todoItems = todoItemsData.map((todoItem) => (
     <div>
-      <TodoItem key={todoItem.id} item={todoItem.description} />
+      <TodoItem key={todoItem.id} item={todoItem} />
     </div>
   ));
   return (
