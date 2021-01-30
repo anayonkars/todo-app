@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
 
-function MyGreeting() {
-    const firstName = "Anayonkar";
-    const lastName = "Shivalkar";
-    return <h1>Hello, {firstName + " " + lastName}</h1>
+class MyGreeting extends Component {
+    render() {
+        return <h1>Hello, {this.props.firstName + " " + this.props.lastName}</h1>
+    }
 }
 
 export default MyGreeting;
