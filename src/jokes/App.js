@@ -4,10 +4,16 @@ import Joke from "./Joke";
 import jokesData from "./jokesData";
 
 function App(props) {
+  const jokes = jokesData.map((joke) => (
+    <div>
+      <Joke id={joke.id} question={joke.question} punchline={joke.punchline} />
+      <hr />
+    </div>
+  ));
   return (
     <div>
       <h1>Below are the jokes</h1>
-      {jokesData.map((joke) => (
+      {/*{jokesData.map((joke) => (
         <div>
           <Joke
             id={joke.id}
@@ -16,7 +22,8 @@ function App(props) {
           />
           <hr />
         </div>
-      ))}
+      ))}*/}
+      {jokes}
     </div>
   );
 }
