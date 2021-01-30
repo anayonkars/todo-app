@@ -6,7 +6,7 @@ function App(props) {
   return (
     <div>
       <h1>Below are the jokes</h1>
-      <Joke />
+      <Joke question={"some question"} punchline={"some punchline"} />
     </div>
   );
 }
