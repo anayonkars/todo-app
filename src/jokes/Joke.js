@@ -4,7 +4,9 @@ import PropTypes from "prop-types";
 function Joke(props) {
   return (
     <div>
-      <p>Question: {props.question}</p>
+      <p style={{ display: props.question ? "block" : "none" }}>
+        Question: {props.question}
+      </p>
       <p>Punchline: {props.punchline}</p>
     </div>
   );

@@ -8,7 +8,7 @@ function App(props) {
       <h1>Below are the jokes</h1>
       <Joke question={"some question"} punchline={"some punchline"} />
       <br />
-      <Joke question={"some question"} punchline={"some punchline"} />
+      <Joke punchline={"some punchline"} />
       <br />
       <Joke question={"some question"} punchline={"some punchline"} />
       <br />
