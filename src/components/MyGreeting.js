@@ -15,7 +15,7 @@ class MyGreeting extends Component {
     }
     return (
       <div>
-        <h1>
+        <h1 style={{ color: "#FF8C00", backgroundColor: "#FF2D00" }}>
           Good {timeOfDay}, {`${firstName} ${lastName}`}
         </h1>
         <h3>It is currently about {date.getHours() % 12} o'clock </h3>
