@@ -1,21 +1,22 @@
 import React, { Component } from "react";
 import TodoItem from "./TodoItem";
 
-function MyContent() {
-  var todoItems = [
-    "Todo Item",
-    "Some another todo item",
-    "Yet another todo item",
-  ];
-  var handleChange = (event) => {
-    console.log(event);
-  };
-  return (
-    <div>
-      <main>
-        <p>Content from MyContent</p>
-        <ul>
-          {/*{todoItems.map((todoItem) => (
+class MyContent extends Component {
+  render() {
+    var todoItems = [
+      "Todo Item",
+      "Some another todo item",
+      "Yet another todo item",
+    ];
+    var handleChange = (event) => {
+      console.log(event);
+    };
+    return (
+      <div>
+        <main>
+          <p>Content from MyContent</p>
+          <ul>
+            {/*{todoItems.map((todoItem) => (
             // <li>{todoItem}</li>
             <div>
               <label>
@@ -25,15 +26,16 @@ function MyContent() {
               <br />
             </div>
           ))}*/}
-          <li>
-            <TodoItem />
-            <TodoItem />
-            <TodoItem />
-          </li>
-        </ul>
-      </main>
-    </div>
-  );
+            <li>
+              <TodoItem />
+              <TodoItem />
+              <TodoItem />
+            </li>
+          </ul>
+        </main>
+      </div>
+    );
+  }
 }
 
 export default MyContent;
