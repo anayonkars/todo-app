@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 
 function MyFooter() {
-  return <footer>Footer from MyFooter</footer>;
+  return <footer className={"navbar"}>Footer from MyFooter</footer>;
 }
 
 export default MyFooter;
