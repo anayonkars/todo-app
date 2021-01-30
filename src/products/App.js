@@ -5,7 +5,13 @@ import Product from "./Product";
 function App(props) {
   const products = productsData.map((product) => (
     <div>
-      <Product key={product.id} />
+      <Product
+        key={product.id}
+        id={product.id}
+        name={product.name}
+        price={product.price}
+        description={product.description}
+      />
       <hr />
     </div>
   ));
