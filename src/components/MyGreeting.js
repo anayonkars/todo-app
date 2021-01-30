@@ -6,7 +6,7 @@ class MyGreeting extends Component {
             firstName,
             lastName
         } = this.props;
-        return <h1>Hello, {firstName + " " + lastName}</h1>
+        return <h1>Hello, {`${firstName} ${lastName}`}</h1>
     }
 }
 
