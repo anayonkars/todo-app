@@ -1,7 +1,9 @@
 import React, {Component} from 'react';
 
 function MyGreeting() {
-    return <h1>Hello, World!</h1>
+    const firstName = "Anayonkar";
+    const lastName = "Shivalkar";
+    return <h1>Hello, {firstName + " " + lastName}</h1>
 }
 
 export default MyGreeting;
