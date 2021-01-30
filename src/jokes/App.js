@@ -14,7 +14,7 @@ function App(props) {
       <hr />
       <Joke question={"some question"} punchline={"some punchline"} />
       <hr />
-      <Joke question={"some question"} punchline={"some punchline"} />
+      <Joke />
     </div>
   );
 }

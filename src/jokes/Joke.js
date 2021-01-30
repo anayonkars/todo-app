@@ -4,10 +4,16 @@ import PropTypes from "prop-types";
 function Joke(props) {
   return (
     <div>
-      {props.question ? <p>Question: {props.question}</p> : null}
-      <p style={{ display: !props.punchline && "none" }}>
-        Punchline: {props.punchline}
-      </p>
+      {props.question ? (
+        <p>Question: {props.question}</p>
+      ) : (
+        <p>There is no question</p>
+      )}
+      {props.punchline ? (
+        <p>Punchline : {props.punchline}</p>
+      ) : (
+        <p>There is no punchline</p>
+      )}
     </div>
   );
 }
