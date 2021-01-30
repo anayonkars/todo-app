@@ -2,20 +2,18 @@ import React, { Component } from "react";
 import TodoItem from "./TodoItem";
 import "../style.css";
 
-class MyContent extends Component {
-  render() {
-    return (
-      <div className="todolist">
-        <main>
-          <ul>
-            {this.props.todoItems.map((todoItem) => (
-              <TodoItem item={todoItem} />
-            ))}
-          </ul>
-        </main>
-      </div>
-    );
-  }
+function MyContent(props) {
+  return (
+    <div className="todolist">
+      <main>
+        <ul>
+          {props.todoItems.map((todoItem) => (
+            <TodoItem item={todoItem} />
+          ))}
+        </ul>
+      </main>
+    </div>
+  );
 }
 
 export default MyContent;
