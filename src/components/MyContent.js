@@ -3,11 +3,6 @@ import TodoItem from "./TodoItem";
 
 class MyContent extends Component {
   render() {
-    var todoItems = [
-      "Todo Item",
-      "Some another todo item",
-      "Yet another todo item",
-    ];
     var handleChange = (event) => {
       console.log(event);
     };
@@ -26,11 +21,14 @@ class MyContent extends Component {
               <br />
             </div>
           ))}*/}
-            <li>
+            {/*<li>
               <TodoItem item="Todo Item" />
               <TodoItem item="Some another todo item" />
               <TodoItem item="yet another todo item" />
-            </li>
+            </li>*/}
+            {this.props.todoItems.map((todoItem) => (
+              <TodoItem item={todoItem} />
+            ))}
           </ul>
         </main>
       </div>

@@ -5,11 +5,16 @@ import MyHeader from "./MyHeader";
 import MyGreeting from "./MyGreeting";
 
 function MyApp() {
+  const todoItems = [
+    "Todo Item",
+    "Some another todo item",
+    "Yet another todo item",
+  ];
   return (
     <div>
       <MyHeader />
       <MyGreeting firstName="Anayonkar" lastName="Shivalkar" />
-      <MyContent />
+      <MyContent todoItems={todoItems} />
       <MyFooter />
     </div>
   );
