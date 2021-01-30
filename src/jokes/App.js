@@ -7,13 +7,13 @@ function App(props) {
     <div>
       <h1>Below are the jokes</h1>
       <Joke question={"some question"} punchline={"some punchline"} />
-      <br />
+      <hr />
       <Joke punchline={"some punchline"} />
-      <br />
+      <hr />
       <Joke question={"some question"} />
-      <br />
+      <hr />
       <Joke question={"some question"} punchline={"some punchline"} />
-      <br />
+      <hr />
       <Joke question={"some question"} punchline={"some punchline"} />
     </div>
   );
