@@ -2,13 +2,13 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
-import MyApp from "./todolist/components/MyApp";
+import App from "./todolist/components/App";
 
 // function onButtonClick() {
 //   window.open("http://www.google.com");
 // }
 
-// function MyApp() {
+// function App() {
 //   return (
 //     <div>
 //       <button onClick={onButtonClick} className="btn btn-primary btn-sm btn-m2">
@@ -24,7 +24,7 @@ import MyApp from "./todolist/components/MyApp";
 //   );
 // }
 
-ReactDOM.render(<MyApp />, document.getElementById("root"));
+ReactDOM.render(<App />, document.getElementById("root"));
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

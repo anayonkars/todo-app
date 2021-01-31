@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import todoItemsData from "./data/todoItemsData";
 import TodoItem from "./TodoItem";
 
-class MyApp extends Component {
+class App extends Component {
   render() {
     const todoItems = todoItemsData.map((todoItem) => (
       <div>
@@ -13,4 +13,4 @@ class MyApp extends Component {
   }
 }
 
-export default MyApp;
+export default App;
