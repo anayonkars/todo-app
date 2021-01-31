@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import todoItemsData from "../todoItemsData";
+import todoItemsData from "./data/todoItemsData";
 import TodoItem from "./TodoItem";
 
 class MyApp extends Component {

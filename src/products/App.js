@@ -1,5 +1,5 @@
 import React from "react";
-import productsData from "./productsData";
+import productsData from "./data/productsData";
 import Product from "./Product";
 
 function App(props) {

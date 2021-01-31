@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import Joke from "./Joke";
-import jokesData from "./jokesData";
+import jokesData from "./data/jokesData";
 
 function App(props) {
   const jokes = jokesData.map((joke) => (
